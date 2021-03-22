@@ -14,7 +14,7 @@ Path.cwd().is_absolute() #Returns True if path is absolute
 Path('my/relative/path')# Example of getting a abosulte path from a relative path  
 Path.cwd() / Path('my/relative/path') 
 
-Path.home() / Path('my/relative/path') #gets an absoulte path using the home directoy instead of the corrent wokring dic
+Path.home() / Path('my/relative/path') # gets an absoulte path using the home directoy instead of the corrent wokring dic
 
 #How to extrat the drive attribute
 p = Path('C:/users/Al/spam.txt')
@@ -26,3 +26,13 @@ p.name #spam.txt
 p.stem #spam
 p.suffix #.txt
 p.drive #C:
+
+
+#glob() listing the contents of a folder accorfing to a glob pattern
+
+p = Path('C:/Users/robertreyes/Desktop')
+for textFilePathObj in p.glob('*.txt'):
+    print(textFilePathObj) # Prints the Path object as a string 
+    # Do something with the text file
+    
+
