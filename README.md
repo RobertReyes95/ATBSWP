@@ -1,7 +1,5 @@
-## Automate the boring stuff with Python 
+## Automating with Python
 
-This is a repo for automate the boring stuff with python walkthrough 
-
-all files will be uploaded here
+This is a repo hols automation python scripts/apps
 
 # DEV ON!!!
